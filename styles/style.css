@@ -206,4 +206,33 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 150px;
+}
+
+.support-section h3 {
+  margin-bottom: 25px;
+  color: white;
+}
+
+.support-section p {
+  margin-bottom: 30px;
+  color: white;
+  max-width: 600px;
+}
+
+input {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Azeret Mono", monospace;
+}
+
+input[type="text"] {
+  width: 548px;
+}
+
+input[type="submit"] {
+  font-weight: 600;
+  cursor: pointer;
 }
