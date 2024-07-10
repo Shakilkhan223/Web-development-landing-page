@@ -86,9 +86,12 @@ section {
   color: #0d1321;
 }
 
-.banner-content p {
+.banner-content p,
+.myins-heading p,
+.current-target-heading p {
   max-width: 850px;
   font-weight: 500;
+  margin: 0 auto;
 }
 
 .banner-content a {
@@ -135,4 +138,30 @@ section {
   font-size: 24px;
   color: #0d1321;
   line-height: 36px;
+}
+
+/* my inspiration style  */
+
+.myins-heading h3 {
+  margin-bottom: 25px;
+}
+
+.myins-heading p {
+  margin-bottom: 50px;
+}
+
+.inspi-video {
+  padding: 32px;
+  border: 1px solid #0d132169;
+  border-radius: 10px;
+  margin-bottom: 150px;
+}
+
+/* current target style  */
+.current-target-heading h3 {
+  margin-bottom: 25px;
+}
+
+.current-target-heading p {
+  margin-bottom: 50px;
 }
