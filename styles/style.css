@@ -165,3 +165,45 @@ section {
 .current-target-heading p {
   margin-bottom: 50px;
 }
+
+.current-target-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 150px;
+}
+
+.current-target-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 5px;
+}
+
+.current-target-content a {
+  color: #0d1321;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* support section style  */
+.support-section {
+  background-image: linear-gradient(
+      0deg,
+      rgb(16, 16, 16) -19.5%,
+      rgba(16, 16, 16, 0.237) 100%
+    ),
+    url("../assets/handshake.jpg");
+  height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
