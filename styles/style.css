@@ -236,3 +236,25 @@ input[type="submit"] {
   font-weight: 600;
   cursor: pointer;
 }
+
+/* footer style  */
+
+footer {
+  padding-bottom: 50px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-content h4 {
+  font-size: 20px;
+  color: #0d1321;
+}
+
+.social-link {
+  display: flex;
+  gap: 25px;
+}
