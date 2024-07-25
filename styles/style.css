@@ -17,9 +17,18 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* global css style  */
+
+.scrool {
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  text-decoration: none;
+}
 .text-center {
   text-align: center;
 }
@@ -45,13 +54,18 @@ body {
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.5s linear;
+}
+.btn:hover {
+  background-color: #0d1321;
+  color: white;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0px;
+  padding: 30px 16px !important;
 }
 
 section {
@@ -104,6 +118,12 @@ section {
   color: white;
   border-radius: 10px;
   text-decoration: none;
+  transition: all 0.5s linear;
+}
+
+.banner-content a:hover {
+  background-color: white;
+  color: #0d1321;
 }
 
 /* wey web style  */
@@ -155,6 +175,7 @@ section {
   border: 1px solid #0d132169;
   border-radius: 10px;
   margin-bottom: 150px;
+  height: 550px;
 }
 
 /* current target style  */
@@ -181,10 +202,42 @@ section {
   gap: 25px;
   justify-content: space-between;
   align-items: flex-start;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .current-target-content a {
+  color: #0d1321;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* my next target style  */
+.next-target-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid #0d132169;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.next-target-container:last-child {
+  margin-bottom: 100px;
+}
+
+.next-target-img {
+  flex: none;
+}
+
+.next-target-content h4 {
+  margin-bottom: 15px;
+}
+.next-target-content p {
+  margin-bottom: 25px;
+}
+
+.next-target-content a {
   color: #0d1321;
   font-size: 18px;
   font-weight: 600;
@@ -208,6 +261,7 @@ section {
   background-size: cover;
   border-radius: 10px;
   margin-bottom: 150px;
+  padding: 20px;
 }
 
 .support-section h3 {
@@ -221,6 +275,10 @@ section {
   max-width: 600px;
 }
 
+form {
+  width: 100%;
+}
+
 input {
   padding: 20px;
   border-radius: 10px;
@@ -228,19 +286,28 @@ input {
   font-family: "Azeret Mono", monospace;
 }
 
+input:focus {
+  outline: none;
+}
+
 input[type="text"] {
-  width: 548px;
+  width: 70%;
 }
 
 input[type="submit"] {
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.5s linear;
+}
+input[type="submit"]:hover {
+  background-color: #0d1321;
+  color: white;
 }
 
 /* footer style  */
 
 footer {
-  padding-bottom: 50px;
+  padding-bottom: 50px !important;
 }
 
 .footer-content {
@@ -257,4 +324,93 @@ footer {
 .social-link {
   display: flex;
   gap: 25px;
+}
+
+/* media query style  */
+
+@media screen and (max-width: 992px) {
+  .whyweb-content {
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .reverse {
+    order: 1;
+  }
+
+  .content-left {
+    gap: 20px;
+    align-items: center;
+  }
+
+  .current-target-container {
+    flex-direction: column;
+  }
+
+  .inspi-video {
+    padding: 20px;
+    margin-bottom: 130px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .light-bg {
+    padding: 20px;
+  }
+
+  .current-target-content {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .next-target-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .support-section {
+    height: auto;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-content h4 {
+    text-align: center;
+  }
+
+  .inspi-video {
+    padding: 5px;
+    margin-bottom: 100px;
+    height: 250px;
+  }
 }
